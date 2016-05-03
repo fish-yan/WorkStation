@@ -1,0 +1,20 @@
+//
+//  WorkStationHeader.pch
+//  WorkStation
+//
+//  Created by 薛焱 on 16/5/3.
+//  Copyright © 2016年 薛焱. All rights reserved.
+//
+
+#ifndef WorkStationHeader_pch
+#define WorkStationHeader_pch
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* WorkStationHeader_pch */
