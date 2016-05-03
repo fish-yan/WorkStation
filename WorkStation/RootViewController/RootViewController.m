@@ -28,7 +28,25 @@
     
     // Do any additional setup after loading the view.
 }
-
+- (IBAction)panGestureAction:(UIPanGestureRecognizer *)sender {
+    CGPoint point = [sender translationInView:sender.view];
+    CGRect rect = _tabVC.view.frame;
+    if (sender.state == UIGestureRecognizerStateChanged) {
+        if (_tabVC.view.frame.origin.x <= kMaxX) {
+            _tabVC.view.transform = CGAffineTransformTranslate(_tabVC.view.transform, point.x, 0);
+            [sender setTranslation:CGPointZero inView:sender.view];
+        }
+    }
+    NSLog(@"%f", point.x);
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        if (_tabVC.view.frame.origin.x <= kMaxX - 150) {
+            _tabVC.view.transform = CGAffineTransformIdentity;
+        }else{
+            _tabVC.view.transform = CGAffineTransformTranslate(_tabVC.view.transform, kMaxX - _tabVC.view.frame.origin.x, 0);
+        }
+    }
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

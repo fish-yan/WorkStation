@@ -152,7 +152,7 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="69S-Gu-Cw4" appends="YES" id="XkU-0w-yOU"/>
+                            <outletCollection property="gestureRecognizers" destination="96F-p7-OEE" appends="YES" id="Vxn-lN-YjK"/>
                         </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -161,7 +161,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfJ-1O-uRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="69S-Gu-Cw4"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="96F-p7-OEE">
+                    <connections>
+                        <action selector="panGestureAction:" destination="z0c-2O-DK6" id="Vfy-aL-5DC"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="193" y="23"/>
         </scene>
