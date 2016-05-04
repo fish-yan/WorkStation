@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sek-9O-iwg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--移动工作站-->
+        <scene sceneID="CWu-xk-nvZ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fSw-2L-S7Y" customClass="GuideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b61-i2-H0l"/>
+                        <viewControllerLayoutGuide type="bottom" id="sYf-j9-6ds"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jtm-sm-QIS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-I1-fxt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="PqL-aO-3L0">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCell" id="0p9-Gp-sdp" customClass="GuideCell">
+                                        <rect key="frame" x="1" y="1" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf3-wV-NfU">
+                                                    <rect key="frame" x="1" y="0.0" width="88" height="89"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="快速洗车" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-WU-l0m">
+                                                            <rect key="frame" x="34" y="20" width="21" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="21" id="DWy-Za-pBl"/>
+                                                                <constraint firstAttribute="height" constant="24" id="eyq-ZL-agU"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速洗车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-Hm-JJF">
+                                                            <rect key="frame" x="20" y="54" width="48" height="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="K6M-WU-l0m" firstAttribute="centerX" secondItem="Kf3-wV-NfU" secondAttribute="centerX" id="3PT-98-HZX"/>
+                                                        <constraint firstItem="K6M-WU-l0m" firstAttribute="top" secondItem="Kf3-wV-NfU" secondAttribute="top" constant="20" id="EBU-Ar-0S4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hGx-Hm-JJF" secondAttribute="trailing" constant="20" id="JL9-Sa-FqM"/>
+                                                        <constraint firstItem="hGx-Hm-JJF" firstAttribute="leading" secondItem="Kf3-wV-NfU" secondAttribute="leading" constant="20" id="RKu-PO-Xa4"/>
+                                                        <constraint firstItem="hGx-Hm-JJF" firstAttribute="top" secondItem="K6M-WU-l0m" secondAttribute="bottom" constant="10" id="n1l-9y-X8m"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hGx-Hm-JJF" secondAttribute="bottom" constant="20" id="qrh-zX-IK8"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Kf3-wV-NfU" firstAttribute="centerX" secondItem="0p9-Gp-sdp" secondAttribute="centerX" id="FrD-gW-VUr"/>
+                                            <constraint firstItem="Kf3-wV-NfU" firstAttribute="centerY" secondItem="0p9-Gp-sdp" secondAttribute="centerY" id="JLf-hE-j3b"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemImage" destination="K6M-WU-l0m" id="ASc-Xg-7kR"/>
+                                            <outlet property="itemTitleLab" destination="hGx-Hm-JJF" id="5ko-17-Kc6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fSw-2L-S7Y" id="5aV-4z-Cil"/>
+                                    <outlet property="delegate" destination="fSw-2L-S7Y" id="eDt-VF-DYK"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sYf-j9-6ds" firstAttribute="top" secondItem="e8K-I1-fxt" secondAttribute="bottom" id="0fn-SP-P33"/>
+                            <constraint firstItem="e8K-I1-fxt" firstAttribute="top" secondItem="b61-i2-H0l" secondAttribute="bottom" id="KWB-tW-DB0"/>
+                            <constraint firstItem="e8K-I1-fxt" firstAttribute="leading" secondItem="Jtm-sm-QIS" secondAttribute="leading" id="PdP-Mm-1h3"/>
+                            <constraint firstAttribute="trailing" secondItem="e8K-I1-fxt" secondAttribute="trailing" id="nJ2-5n-7F8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="移动工作站" id="anF-WW-lf0">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="O9s-xp-y92">
+                            <view key="customView" contentMode="scaleToFill" id="HlF-QR-VrE">
+                                <rect key="frame" x="16" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZl-b3-pRS">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="hQb-Ld-A6S"/>
+                                        </constraints>
+                                        <state key="normal" image="头像"/>
+                                        <connections>
+                                            <action selector="leftBtnAction:" destination="fSw-2L-S7Y" eventType="touchUpInside" id="H5A-Vb-OE1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uZl-b3-pRS" firstAttribute="top" secondItem="HlF-QR-VrE" secondAttribute="top" id="1Ha-yr-Qzg"/>
+                                    <constraint firstItem="uZl-b3-pRS" firstAttribute="leading" secondItem="HlF-QR-VrE" secondAttribute="leading" id="cs4-tC-wNX"/>
+                                    <constraint firstAttribute="bottom" secondItem="uZl-b3-pRS" secondAttribute="bottom" id="eiw-Y9-7Rk"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="e8K-I1-fxt" id="CGc-lv-Zrd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCm-s5-iNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QUS-ee-Mw7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sek-9O-iwg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zKk-El-rdD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.21960784310000001" green="0.3294117647" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fSw-2L-S7Y" kind="relationship" relationship="rootViewController" id="wg9-6i-gRh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2p-Rk-1VO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170.66666666666666" y="394.75999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="头像" width="66" height="66"/>
+        <image name="快速洗车" width="21" height="24"/>
+    </resources>
+</document>

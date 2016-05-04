@@ -1,27 +1,21 @@
 //
-//  GuideViewController.m
+//  PurcgaseViewController.m
 //  WorkStation
 //
-//  Created by 薛焱 on 16/5/3.
+//  Created by 薛焱 on 16/5/4.
 //  Copyright © 2016年 薛焱. All rights reserved.
 //
 
-#import "GuideViewController.h"
+#import "PurcgaseViewController.h"
 
-@interface GuideViewController ()
+@interface PurcgaseViewController ()
 
 @end
 
-@implementation GuideViewController
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
+@implementation PurcgaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
 }
 

@@ -24,7 +24,27 @@
     guideNVC.title = @"导购";
     guideNVC.tabBarItem.image = [UIImage imageNamed:@"导购"];
     
-    self.viewControllers = @[guideNVC];
+    UIStoryboard *working = [UIStoryboard storyboardWithName:@"Working" bundle:nil];
+    UINavigationController *workingNVC = [working instantiateInitialViewController];
+    workingNVC.title = @"施工";
+    workingNVC.tabBarItem.image = [UIImage imageNamed:@"施工"];
+    
+    UIStoryboard *wareHouse = [UIStoryboard storyboardWithName:@"WareHouse" bundle:nil];
+    UINavigationController *wareHouseNVC = [wareHouse instantiateInitialViewController];
+    wareHouseNVC.title = @"库管";
+    wareHouseNVC.tabBarItem.image = [UIImage imageNamed:@"库管"];
+    
+    UIStoryboard *purchase = [UIStoryboard storyboardWithName:@"Purchase" bundle:nil];
+    UINavigationController *purchaseNVC = [purchase instantiateInitialViewController];
+    purchaseNVC.title = @"采购";
+    purchaseNVC.tabBarItem.image = [UIImage imageNamed:@"采购"];
+    
+    UIStoryboard *manager = [UIStoryboard storyboardWithName:@"Manager" bundle:nil];
+    UINavigationController *managerNVC = [manager instantiateInitialViewController];
+    managerNVC.title = @"管理层";
+    managerNVC.tabBarItem.image = [UIImage imageNamed:@"管理层"];
+    
+    self.viewControllers = @[guideNVC, workingNVC, wareHouseNVC, purchaseNVC, managerNVC];
     
     // Do any additional setup after loading the view.
 }
