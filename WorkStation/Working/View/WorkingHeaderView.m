@@ -1,14 +1,14 @@
 //
-//  GuideHeaderView.m
+//  WorkingHeaderView.m
 //  WorkStation
 //
-//  Created by 薛焱 on 16/5/4.
+//  Created by 薛焱 on 16/5/5.
 //  Copyright © 2016年 薛焱. All rights reserved.
 //
 
-#import "GuideHeaderView.h"
+#import "WorkingHeaderView.h"
 
-@interface GuideHeaderView ()
+@interface WorkingHeaderView ()
 
 @property (weak, nonatomic) IBOutlet UIView *firstCircleView;
 @property (weak, nonatomic) IBOutlet UIView *secondCircleView;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation GuideHeaderView
+@implementation WorkingHeaderView
 
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
@@ -51,7 +51,7 @@
 
 - (void)loadNib{
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
-    UINib *nib = [UINib nibWithNibName:@"GuideHeaderView" bundle:bundle];
+    UINib *nib = [UINib nibWithNibName:@"WorkingHeaderView" bundle:bundle];
     UIView *headerView = [nib instantiateWithOwner:self options:nil].firstObject;
     headerView.frame = self.bounds;
     [self addSubview:headerView];
@@ -65,12 +65,12 @@
 - (void)firstCircle{
     
     [_firstCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:[UIColor whiteColor] StrokeEnd:1.0]];
-    [_firstCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:[UIColor orangeColor] StrokeEnd:0.0]];
+    [_firstCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:UIColorFromRGB(0x57f114) StrokeEnd:0.0]];
 }
 
 - (void)secondCircle{
     [_secondCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:[UIColor whiteColor] StrokeEnd:1.0]];
-    [_secondCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:[UIColor orangeColor] StrokeEnd:0.0]];
+    [_secondCircleView.layer addSublayer:[self creatShapeLayerWithStrokeColor:UIColorFromRGB(0x57f114) StrokeEnd:0.5]];
 }
 
 
@@ -88,6 +88,7 @@
     shapeLayer.strokeEnd = strokeEnd;
     return shapeLayer;
 }
+
 
 
 /*

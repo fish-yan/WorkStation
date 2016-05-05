@@ -11,6 +11,7 @@
 #import "GuideHeaderView.h"
 
 #define kMaxX 210
+#define kHeaderHeight 480
 @interface GuideViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -21,10 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    _collectionView.contentInset = UIEdgeInsetsMake(500, 0, 0, 0);
-    GuideHeaderView *headerView = [[NSBundle mainBundle]loadNibNamed:@"GuideHeaderView" owner:self options:nil].firstObject;
-    headerView.frame = CGRectMake(0, -500, kScreenWidth, 500);
-    [_collectionView.layer layoutIfNeeded];
+    _collectionView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
+    GuideHeaderView *headerView = [[GuideHeaderView alloc]initWithFrame:CGRectMake(0, -kHeaderHeight, kScreenWidth, kHeaderHeight)];
+    headerView.firstStrokeEnd = 0.77;
+    headerView.secondStrokeEnd = 0.329;
     [_collectionView addSubview:headerView];
     // Do any additional setup after loading the view.
 }
@@ -71,9 +72,25 @@
 
 #pragma mark - UICollectionViewDelegate
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
 
+#pragma mark - UIGestureRecognizerDelegate
 
-
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    if (self.navigationController.viewControllers.count == 1) {
+        return NO;
+    }
+    return YES;
+}
 
 /*
 #pragma mark - Navigation

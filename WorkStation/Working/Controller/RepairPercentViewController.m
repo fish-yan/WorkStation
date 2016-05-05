@@ -1,38 +1,31 @@
 //
-//  ManagerViewController.m
+//  RepairPercentViewController.m
 //  WorkStation
 //
-//  Created by 薛焱 on 16/5/4.
+//  Created by 薛焱 on 16/5/5.
 //  Copyright © 2016年 薛焱. All rights reserved.
 //
 
-#import "ManagerViewController.h"
+#import "RepairPercentViewController.h"
 
-@interface ManagerViewController ()
+@interface RepairPercentViewController ()
 
 @end
 
-@implementation ManagerViewController
+@implementation RepairPercentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)backItemAction:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    if (self.navigationController.viewControllers.count == 1) {
-        return NO;
-    }
-    return YES;
 }
 
 /*

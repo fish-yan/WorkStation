@@ -39,10 +39,6 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="快速洗车" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-WU-l0m">
                                                             <rect key="frame" x="34" y="20" width="21" height="24"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="21" id="DWy-Za-pBl"/>
-                                                                <constraint firstAttribute="height" constant="24" id="eyq-ZL-agU"/>
-                                                            </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速洗车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-Hm-JJF">
                                                             <rect key="frame" x="20" y="54" width="48" height="15"/>

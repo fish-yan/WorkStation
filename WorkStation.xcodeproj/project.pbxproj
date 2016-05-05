@@ -40,6 +40,11 @@
 		93A51F1E1CD9BD2100DCCE14 /* PrinterSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A51F1D1CD9BD2100DCCE14 /* PrinterSectionView.xib */; };
 		93A51F211CD9BD4400DCCE14 /* PrinterSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A51F201CD9BD4400DCCE14 /* PrinterSectionView.m */; };
 		93A51F241CD9CDEA00DCCE14 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A51F231CD9CDEA00DCCE14 /* ChangePasswordViewController.m */; };
+		93BFD7D61CDB3BA40029BD6F /* WorkingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BFD7D51CDB3BA40029BD6F /* WorkingHeaderView.xib */; };
+		93BFD7D91CDB3BB60029BD6F /* WorkingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFD7D81CDB3BB60029BD6F /* WorkingHeaderView.m */; };
+		93BFD7DF1CDB4C330029BD6F /* WorkTimeChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFD7DE1CDB4C330029BD6F /* WorkTimeChartViewController.m */; };
+		93BFD7E51CDB4C7E0029BD6F /* CommitCarPercentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFD7E41CDB4C7E0029BD6F /* CommitCarPercentViewController.m */; };
+		93BFD7E81CDB4C990029BD6F /* RepairPercentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BFD7E71CDB4C990029BD6F /* RepairPercentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +125,15 @@
 		93A51F201CD9BD4400DCCE14 /* PrinterSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterSectionView.m; sourceTree = "<group>"; };
 		93A51F221CD9CDEA00DCCE14 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		93A51F231CD9CDEA00DCCE14 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		93BFD7D51CDB3BA40029BD6F /* WorkingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingHeaderView.xib; sourceTree = "<group>"; };
+		93BFD7D71CDB3BB60029BD6F /* WorkingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingHeaderView.h; sourceTree = "<group>"; };
+		93BFD7D81CDB3BB60029BD6F /* WorkingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkingHeaderView.m; sourceTree = "<group>"; };
+		93BFD7DD1CDB4C330029BD6F /* WorkTimeChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkTimeChartViewController.h; sourceTree = "<group>"; };
+		93BFD7DE1CDB4C330029BD6F /* WorkTimeChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkTimeChartViewController.m; sourceTree = "<group>"; };
+		93BFD7E31CDB4C7E0029BD6F /* CommitCarPercentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitCarPercentViewController.h; sourceTree = "<group>"; };
+		93BFD7E41CDB4C7E0029BD6F /* CommitCarPercentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitCarPercentViewController.m; sourceTree = "<group>"; };
+		93BFD7E61CDB4C990029BD6F /* RepairPercentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepairPercentViewController.h; sourceTree = "<group>"; };
+		93BFD7E71CDB4C990029BD6F /* RepairPercentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepairPercentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +383,12 @@
 			children = (
 				93A51EE51CD9971200DCCE14 /* WorkingViewController.h */,
 				93A51EE61CD9971200DCCE14 /* WorkingViewController.m */,
+				93BFD7DD1CDB4C330029BD6F /* WorkTimeChartViewController.h */,
+				93BFD7DE1CDB4C330029BD6F /* WorkTimeChartViewController.m */,
+				93BFD7E31CDB4C7E0029BD6F /* CommitCarPercentViewController.h */,
+				93BFD7E41CDB4C7E0029BD6F /* CommitCarPercentViewController.m */,
+				93BFD7E61CDB4C990029BD6F /* RepairPercentViewController.h */,
+				93BFD7E71CDB4C990029BD6F /* RepairPercentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +403,9 @@
 		93A51ED51CD9965200DCCE14 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93BFD7D71CDB3BB60029BD6F /* WorkingHeaderView.h */,
+				93BFD7D81CDB3BB60029BD6F /* WorkingHeaderView.m */,
+				93BFD7D51CDB3BA40029BD6F /* WorkingHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,6 +576,7 @@
 				935623521CD83B020019C8BA /* LaunchScreen.storyboard in Resources */,
 				9356234F1CD83B020019C8BA /* Assets.xcassets in Resources */,
 				930F64CC1CD9EFE50088052C /* GuideHeaderView.xib in Resources */,
+				93BFD7D61CDB3BA40029BD6F /* WorkingHeaderView.xib in Resources */,
 				93A51F061CD99B3800DCCE14 /* Root.storyboard in Resources */,
 				93A51EE01CD996CC00DCCE14 /* WareHouse.storyboard in Resources */,
 				93A51EE41CD996F800DCCE14 /* Manager.storyboard in Resources */,
@@ -588,9 +612,11 @@
 				935623441CD83B020019C8BA /* main.m in Sources */,
 				93A51F041CD99B3800DCCE14 /* RootViewController.m in Sources */,
 				93A51ED61CD9965200DCCE14 /* GuideViewController.m in Sources */,
+				93BFD7E51CDB4C7E0029BD6F /* CommitCarPercentViewController.m in Sources */,
 				930F64C71CD9E65D0088052C /* GuideCell.m in Sources */,
 				93A51EF01CD9973400DCCE14 /* ManagerViewController.m in Sources */,
 				93A51F161CD9AB4400DCCE14 /* PrinterViewController.m in Sources */,
+				93BFD7E81CDB4C990029BD6F /* RepairPercentViewController.m in Sources */,
 				93A51EED1CD9972D00DCCE14 /* PurcgaseViewController.m in Sources */,
 				93A51F241CD9CDEA00DCCE14 /* ChangePasswordViewController.m in Sources */,
 				93A51F131CD9A39300DCCE14 /* SettingListCell.m in Sources */,
@@ -602,9 +628,11 @@
 				93A51F071CD99B3800DCCE14 /* UserCenterCell.m in Sources */,
 				93A51F191CD9B8BA00DCCE14 /* PrinterCell.m in Sources */,
 				93A51F051CD99B3800DCCE14 /* TabBarViewController.m in Sources */,
+				93BFD7DF1CDB4C330029BD6F /* WorkTimeChartViewController.m in Sources */,
 				93A51F211CD9BD4400DCCE14 /* PrinterSectionView.m in Sources */,
 				93A51F0A1CD9A2E100DCCE14 /* SettingViewController.m in Sources */,
 				93A51F031CD99B3800DCCE14 /* AppDelegate.m in Sources */,
+				93BFD7D91CDB3BB60029BD6F /* WorkingHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,48 +1,199 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t01-yT-9zd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BkS-WY-AJb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Working View Controller-->
-        <scene sceneID="IPW-1O-1uB">
+        <!--移动工作站-->
+        <scene sceneID="Xag-Xh-tE7">
             <objects>
-                <viewController id="tIA-5W-dVL" customClass="WorkingViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tYW-bo-NHl" customClass="WorkingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Igm-hA-0n9"/>
-                        <viewControllerLayoutGuide type="bottom" id="eOI-Wh-t0j"/>
+                        <viewControllerLayoutGuide type="top" id="hH5-Tu-zoO"/>
+                        <viewControllerLayoutGuide type="bottom" id="94s-Ng-ngp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eeB-gn-5I6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" id="vuI-Hq-NkB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N0L-to-QnC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="lY9-rE-lt1">
+                                    <size key="itemSize" width="90" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCell" id="jy1-ec-FSq" customClass="GuideCell">
+                                        <rect key="frame" x="1" y="1" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CD1-Wk-9Yo">
+                                                    <rect key="frame" x="1" y="0.0" width="88" height="89"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="快速洗车" translatesAutoresizingMaskIntoConstraints="NO" id="JoF-81-NGk">
+                                                            <rect key="frame" x="34" y="20" width="21" height="24"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速洗车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m38-fe-Ji4">
+                                                            <rect key="frame" x="20" y="54" width="48" height="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="m38-fe-Ji4" secondAttribute="bottom" constant="20" id="8Jw-yO-xyt"/>
+                                                        <constraint firstItem="m38-fe-Ji4" firstAttribute="top" secondItem="JoF-81-NGk" secondAttribute="bottom" constant="10" id="EDc-3u-gWZ"/>
+                                                        <constraint firstItem="JoF-81-NGk" firstAttribute="top" secondItem="CD1-Wk-9Yo" secondAttribute="top" constant="20" id="Oul-kb-AC9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="m38-fe-Ji4" secondAttribute="trailing" constant="20" id="bcA-QW-hGD"/>
+                                                        <constraint firstItem="JoF-81-NGk" firstAttribute="centerX" secondItem="CD1-Wk-9Yo" secondAttribute="centerX" id="cGG-rH-SSC"/>
+                                                        <constraint firstItem="m38-fe-Ji4" firstAttribute="leading" secondItem="CD1-Wk-9Yo" secondAttribute="leading" constant="20" id="izT-Xe-VuL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="CD1-Wk-9Yo" firstAttribute="centerY" secondItem="jy1-ec-FSq" secondAttribute="centerY" id="Na2-cf-n5d"/>
+                                            <constraint firstItem="CD1-Wk-9Yo" firstAttribute="centerX" secondItem="jy1-ec-FSq" secondAttribute="centerX" id="hIB-0Y-VuW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemImage" destination="JoF-81-NGk" id="UfI-Hu-qxT"/>
+                                            <outlet property="itemTitleLab" destination="m38-fe-Ji4" id="Ah2-Td-SjA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tYW-bo-NHl" id="may-Ba-fw0"/>
+                                    <outlet property="delegate" destination="tYW-bo-NHl" id="1U5-6I-fbl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="N0L-to-QnC" firstAttribute="leading" secondItem="vuI-Hq-NkB" secondAttribute="leading" id="7SB-ba-TJi"/>
+                            <constraint firstItem="94s-Ng-ngp" firstAttribute="top" secondItem="N0L-to-QnC" secondAttribute="bottom" id="SHO-UR-uRO"/>
+                            <constraint firstItem="N0L-to-QnC" firstAttribute="top" secondItem="hH5-Tu-zoO" secondAttribute="bottom" id="czB-Kd-N3I"/>
+                            <constraint firstAttribute="trailing" secondItem="N0L-to-QnC" secondAttribute="trailing" id="vyK-zT-Hlz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="移动工作站" id="KSE-CU-KM5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="N0L-to-QnC" id="3JO-w1-jz7"/>
+                        <segue destination="axo-TK-fe8" kind="push" identifier="RepairPercent" id="680-Wo-2s3"/>
+                        <segue destination="nf9-6K-51L" kind="push" identifier="CommitCar" id="UhQ-0u-WaE"/>
+                        <segue destination="nTI-KJ-pnt" kind="push" identifier="WorkTime" id="aK1-4S-Lvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sre-8H-gYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="352"/>
+        </scene>
+        <!--工时报表-->
+        <scene sceneID="FZL-gK-2xd">
+            <objects>
+                <viewController id="nTI-KJ-pnt" customClass="WorkTimeChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SCh-VH-g5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="DuB-NX-kpM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W5N-V0-Mz6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i2o-XL-y28"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationItem key="navigationItem" title="工时报表" id="wDk-bb-lL9">
+                        <barButtonItem key="leftBarButtonItem" image="返回" id="gNR-zV-wY6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UPz-tH-FVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJi-Pc-DbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="373"/>
+            <point key="canvasLocation" x="77" y="1103"/>
+        </scene>
+        <!--交车及时率-->
+        <scene sceneID="HHi-ZI-WAu">
+            <objects>
+                <viewController id="nf9-6K-51L" customClass="CommitCarPercentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nas-pa-TNi"/>
+                        <viewControllerLayoutGuide type="bottom" id="jwH-0G-KKW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7tP-Ta-1wn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="交车及时率" id="c9S-tk-uSZ">
+                        <barButtonItem key="leftBarButtonItem" image="返回" id="CuA-0f-y84">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="099-p5-Cxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="1103"/>
+        </scene>
+        <!--一次性修复率-->
+        <scene sceneID="rWJ-as-bPT">
+            <objects>
+                <viewController id="axo-TK-fe8" customClass="RepairPercentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIA-hu-snd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ND2-iL-Adp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ypj-bL-02H">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="一次性修复率" id="4s3-EY-bSX">
+                        <barButtonItem key="leftBarButtonItem" image="返回" id="1Da-sT-nhM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMA-Lj-toD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="1103"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="CMe-Bq-EnB">
+        <scene sceneID="MjE-QD-ao8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t01-yT-9zd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BkS-WY-AJb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kFM-Mr-oSJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zIc-YC-v5t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.21960784310000001" green="0.3294117647" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="tIA-5W-dVL" kind="relationship" relationship="rootViewController" id="qmc-ik-cEA"/>
+                        <segue destination="tYW-bo-NHl" kind="relationship" relationship="rootViewController" id="ZvP-R7-sLE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YuR-Gi-jq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njB-0F-2dv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="373"/>
+            <point key="canvasLocation" x="50" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="快速洗车" width="21" height="24"/>
+        <image name="返回" width="9" height="16"/>
+    </resources>
 </document>
