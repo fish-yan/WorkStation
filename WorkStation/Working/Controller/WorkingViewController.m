@@ -9,7 +9,7 @@
 #import "WorkingViewController.h"
 #import "GuideCell.h"
 #import "WorkingHeaderView.h"
-
+#define kHeaderHeight 480
 @interface WorkingViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
@@ -19,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    _collectionView.contentInset = UIEdgeInsetsMake(500, 0, 0, 0);
-    WorkingHeaderView *headerView = [[WorkingHeaderView alloc]initWithFrame:CGRectMake(0, -500, kScreenWidth, 500)];
+    _collectionView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
+    WorkingHeaderView *headerView = [[WorkingHeaderView alloc]initWithFrame:CGRectMake(0, -kHeaderHeight, kScreenWidth, kHeaderHeight)];
+    headerView.firstStrokeEnd = 0.76;
+    headerView.secondStrokeEnd = 0.44;
     [_collectionView addSubview:headerView];
     // Do any additional setup after loading the view.
 }

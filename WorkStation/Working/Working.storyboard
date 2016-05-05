@@ -109,11 +109,66 @@
                     <view key="view" contentMode="scaleToFill" id="W5N-V0-Mz6">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9R-Ox-OT2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bgy-Cs-7kh">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bgy-Cs-7kh" id="jQd-eu-9FD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空气滤清芯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITJ-HY-h2k">
+                                                    <rect key="frame" x="11" y="11" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.25490196078431371" green="0.25490196078431371" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpU-ES-WBE">
+                                                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                                                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="cGc-Xk-lRy"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TpU-ES-WBE" firstAttribute="leading" secondItem="jQd-eu-9FD" secondAttribute="leading" id="7Kw-ae-k6g"/>
+                                                <constraint firstAttribute="trailing" secondItem="TpU-ES-WBE" secondAttribute="trailing" id="9HO-oh-OWe"/>
+                                                <constraint firstAttribute="bottom" secondItem="TpU-ES-WBE" secondAttribute="bottom" id="AKj-yo-shl"/>
+                                                <constraint firstItem="ITJ-HY-h2k" firstAttribute="centerY" secondItem="jQd-eu-9FD" secondAttribute="centerY" id="BEe-Ho-TJh"/>
+                                                <constraint firstItem="ITJ-HY-h2k" firstAttribute="leading" secondItem="jQd-eu-9FD" secondAttribute="leading" constant="11" id="ZzE-5P-Lkr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="tT6-XZ-dX3">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT6-XZ-dX3" id="yQm-dt-5g1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DuB-NX-kpM" firstAttribute="top" secondItem="P9R-Ox-OT2" secondAttribute="bottom" id="RGp-ek-Xx2"/>
+                            <constraint firstItem="P9R-Ox-OT2" firstAttribute="leading" secondItem="W5N-V0-Mz6" secondAttribute="leading" id="ToY-Ce-Q7C"/>
+                            <constraint firstAttribute="trailing" secondItem="P9R-Ox-OT2" secondAttribute="trailing" id="c35-qP-t5s"/>
+                            <constraint firstItem="P9R-Ox-OT2" firstAttribute="top" secondItem="SCh-VH-g5t" secondAttribute="bottom" id="d7d-19-QY7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="工时报表" id="wDk-bb-lL9">
                         <barButtonItem key="leftBarButtonItem" image="返回" id="gNR-zV-wY6">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backItemAction:" destination="nTI-KJ-pnt" id="mOZ-hb-lTH"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -132,11 +187,36 @@
                     <view key="view" contentMode="scaleToFill" id="7tP-Ta-1wn">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-Fa-0Lz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ypT-Ho-QwL">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypT-Ho-QwL" id="etm-Qs-5Vb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sea-Fa-0Lz" firstAttribute="top" secondItem="nas-pa-TNi" secondAttribute="bottom" id="Cfn-cL-u5Q"/>
+                            <constraint firstItem="jwH-0G-KKW" firstAttribute="top" secondItem="Sea-Fa-0Lz" secondAttribute="bottom" id="g8X-Xd-BsX"/>
+                            <constraint firstAttribute="trailing" secondItem="Sea-Fa-0Lz" secondAttribute="trailing" id="ghz-UL-AHb"/>
+                            <constraint firstItem="Sea-Fa-0Lz" firstAttribute="leading" secondItem="7tP-Ta-1wn" secondAttribute="leading" id="iT9-k7-pR7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="交车及时率" id="c9S-tk-uSZ">
                         <barButtonItem key="leftBarButtonItem" image="返回" id="CuA-0f-y84">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backItemAction:" destination="nf9-6K-51L" id="bMk-Jy-CUQ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -160,6 +240,9 @@
                     <navigationItem key="navigationItem" title="一次性修复率" id="4s3-EY-bSX">
                         <barButtonItem key="leftBarButtonItem" image="返回" id="1Da-sT-nhM">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backItemAction:" destination="axo-TK-fe8" id="UuS-M9-DU9"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
