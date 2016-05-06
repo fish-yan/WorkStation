@@ -78,7 +78,7 @@
 - (CAShapeLayer *)creatShapeLayerWithStrokeColor:(UIColor *)strokeColor StrokeEnd:(CGFloat)strokeEnd{
     CAShapeLayer *shapeLayer = [[CAShapeLayer alloc]init];
     shapeLayer.frame = _firstCircleView.bounds;
-    CGFloat width = (kScreenWidth - 160) / 4;
+    CGFloat width = (kScreenWidth - 140) / 4;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(width, width) radius:width startAngle:-M_PI_2 endAngle:M_PI + M_PI_2 clockwise:YES];
     shapeLayer.path = path.CGPath;
     shapeLayer.lineWidth = 2;

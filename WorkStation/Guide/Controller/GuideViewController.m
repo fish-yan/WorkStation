@@ -19,9 +19,17 @@
 
 @implementation GuideViewController
 
+- (void)viewWillDisappear:(BOOL)animated{
+    for (UIGestureRecognizer *gesture in self.tabBarController.view.gestureRecognizers) {
+        [self.tabBarController.view removeGestureRecognizer:gesture];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     _collectionView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
     GuideHeaderView *headerView = [[GuideHeaderView alloc]initWithFrame:CGRectMake(0, -kHeaderHeight, kScreenWidth, kHeaderHeight)];
     headerView.firstStrokeEnd = 0.77;
@@ -75,7 +83,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            
+            [self performSegueWithIdentifier:@"Scan" sender:nil];
             break;
             
         default:

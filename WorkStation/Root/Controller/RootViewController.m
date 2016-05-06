@@ -42,8 +42,8 @@
     _tabVC.view.frame = self.view.bounds;
     [self addChildViewController:_tabVC];
     [self.view addSubview:_tabVC.view];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureAction:)];
-    [_tabVC.view addGestureRecognizer:pan];
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureAction:)];
+//    [_tabVC.view addGestureRecognizer:pan];
 
     // Do any additional setup after loading the view.
 }
@@ -51,16 +51,16 @@
 - (void)panGestureAction:(UIPanGestureRecognizer *)sender{
     CGPoint translation = [sender translationInView:sender.view];
     CATransform3D transform = CATransform3DIdentity;
+    CGPoint location = [sender locationInView:sender.view];
     
-    
-    if (translation.x > 20){
+    if (translation.x > 20 && location.x < 200){
         transform = CATransform3DTranslate(transform, kMaxX, 0, 0);
         transform = CATransform3DScale(transform, 0.8, 0.8, 1);
         
         [UIView animateWithDuration:0.3 animations:^{
             _tabVC.view.layer.transform = transform;
         }];
-    }else if (translation.x < -20){
+    }else if (translation.x < -20 && location.x < 200){
         
         [UIView animateWithDuration:0.3 animations:^{
             _tabVC.view.layer.transform = transform;

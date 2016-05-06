@@ -14,6 +14,8 @@
 		930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */; };
 		930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */; };
 		930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */; };
+		930F25EE1CDC3DAE003BD638 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25ED1CDC3DAE003BD638 /* ScanViewController.m */; };
+		930F33DE1CDCA66E003BD638 /* Working.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F33DD1CDCA66E003BD638 /* Working.storyboard */; };
 		930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C31CD9D6990088052C /* VersionsViewController.m */; };
 		930F64C71CD9E65D0088052C /* GuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C61CD9E65D0088052C /* GuideCell.m */; };
 		930F64CA1CD9EFD40088052C /* GuideHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C91CD9EFD40088052C /* GuideHeaderView.m */; };
@@ -25,7 +27,6 @@
 		935623681CD83B020019C8BA /* WorkStationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 935623671CD83B020019C8BA /* WorkStationUITests.m */; };
 		93A51ED61CD9965200DCCE14 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A51EB71CD9965200DCCE14 /* GuideViewController.m */; };
 		93A51ED71CD9965200DCCE14 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A51EB81CD9965200DCCE14 /* Guide.storyboard */; };
-		93A51EDE1CD996BA00DCCE14 /* Working.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A51EDD1CD996BA00DCCE14 /* Working.storyboard */; };
 		93A51EE01CD996CC00DCCE14 /* WareHouse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A51EDF1CD996CC00DCCE14 /* WareHouse.storyboard */; };
 		93A51EE21CD996EE00DCCE14 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A51EE11CD996EE00DCCE14 /* Purchase.storyboard */; };
 		93A51EE41CD996F800DCCE14 /* Manager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A51EE31CD996F800DCCE14 /* Manager.storyboard */; };
@@ -84,6 +85,9 @@
 		930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitCarHeaderView.m; sourceTree = "<group>"; };
 		930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkTimeHeaderView.xib; sourceTree = "<group>"; };
 		930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitCarHeaderView.xib; sourceTree = "<group>"; };
+		930F25EC1CDC3DAE003BD638 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		930F25ED1CDC3DAE003BD638 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		930F33DD1CDCA66E003BD638 /* Working.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Working.storyboard; sourceTree = "<group>"; };
 		930F64C21CD9D6990088052C /* VersionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionsViewController.h; sourceTree = "<group>"; };
 		930F64C31CD9D6990088052C /* VersionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionsViewController.m; sourceTree = "<group>"; };
 		930F64C51CD9E65D0088052C /* GuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideCell.h; sourceTree = "<group>"; };
@@ -105,7 +109,6 @@
 		93A51EB61CD9965200DCCE14 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		93A51EB71CD9965200DCCE14 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		93A51EB81CD9965200DCCE14 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
-		93A51EDD1CD996BA00DCCE14 /* Working.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Working.storyboard; sourceTree = "<group>"; };
 		93A51EDF1CD996CC00DCCE14 /* WareHouse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WareHouse.storyboard; sourceTree = "<group>"; };
 		93A51EE11CD996EE00DCCE14 /* Purchase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Purchase.storyboard; sourceTree = "<group>"; };
 		93A51EE31CD996F800DCCE14 /* Manager.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Manager.storyboard; sourceTree = "<group>"; };
@@ -180,9 +183,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930F25F11CDC3F53003BD638 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		935623361CD83B020019C8BA = {
 			isa = PBXGroup;
 			children = (
+				930F25F11CDC3F53003BD638 /* Third */,
 				935623411CD83B020019C8BA /* WorkStation */,
 				9356235B1CD83B020019C8BA /* WorkStationTests */,
 				935623661CD83B020019C8BA /* WorkStationUITests */,
@@ -259,6 +270,8 @@
 			children = (
 				93A51EB61CD9965200DCCE14 /* GuideViewController.h */,
 				93A51EB71CD9965200DCCE14 /* GuideViewController.m */,
+				930F25EC1CDC3DAE003BD638 /* ScanViewController.h */,
+				930F25ED1CDC3DAE003BD638 /* ScanViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,7 +402,7 @@
 		93A51ED21CD9965200DCCE14 /* Working */ = {
 			isa = PBXGroup;
 			children = (
-				93A51EDD1CD996BA00DCCE14 /* Working.storyboard */,
+				930F33DD1CDCA66E003BD638 /* Working.storyboard */,
 				93A51ED31CD9965200DCCE14 /* Controller */,
 				93A51ED41CD9965200DCCE14 /* Model */,
 				93A51ED51CD9965200DCCE14 /* View */,
@@ -568,6 +581,7 @@
 				TargetAttributes = {
 					9356233E1CD83B020019C8BA = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UZT23M6T33;
 					};
 					935623571CD83B020019C8BA = {
 						CreatedOnToolsVersion = 7.3;
@@ -604,6 +618,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930F33DE1CDCA66E003BD638 /* Working.storyboard in Resources */,
 				935623521CD83B020019C8BA /* LaunchScreen.storyboard in Resources */,
 				930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */,
 				930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */,
@@ -616,7 +631,6 @@
 				93A51ED71CD9965200DCCE14 /* Guide.storyboard in Resources */,
 				93A51F1E1CD9BD2100DCCE14 /* PrinterSectionView.xib in Resources */,
 				93A51EE21CD996EE00DCCE14 /* Purchase.storyboard in Resources */,
-				93A51EDE1CD996BA00DCCE14 /* Working.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +674,7 @@
 				93A51EEA1CD9972200DCCE14 /* WareHouseViewController.m in Sources */,
 				930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */,
 				93A51F071CD99B3800DCCE14 /* UserCenterCell.m in Sources */,
+				930F25EE1CDC3DAE003BD638 /* ScanViewController.m in Sources */,
 				930F25DE1CDC29B9003BD638 /* CommitCarCell.m in Sources */,
 				93A51F191CD9B8BA00DCCE14 /* PrinterCell.m in Sources */,
 				930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */,
@@ -807,10 +822,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third/PlateRecognize",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkStation/Root/WorkStationHeader.pch";
 				INFOPLIST_FILE = WorkStation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xueyan.WorkStation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjm.xueyuan.WorkStation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -822,10 +841,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third/PlateRecognize",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkStation/Root/WorkStationHeader.pch";
 				INFOPLIST_FILE = WorkStation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xueyan.WorkStation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjm.xueyuan.WorkStation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

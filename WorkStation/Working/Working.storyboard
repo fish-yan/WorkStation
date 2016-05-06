@@ -84,7 +84,32 @@
                             <constraint firstAttribute="trailing" secondItem="N0L-to-QnC" secondAttribute="trailing" id="vyK-zT-Hlz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="移动工作站" id="KSE-CU-KM5"/>
+                    <navigationItem key="navigationItem" title="移动工作站" id="KSE-CU-KM5">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Yac-IW-7PP">
+                            <view key="customView" contentMode="scaleToFill" id="6a6-sr-zJs">
+                                <rect key="frame" x="16" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSS-yd-aHD">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="33" id="bLV-WG-gC1"/>
+                                        </constraints>
+                                        <state key="normal" image="头像"/>
+                                        <connections>
+                                            <action selector="leftBtnAction:" destination="tYW-bo-NHl" eventType="touchUpInside" id="xny-Y6-3PN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KSS-yd-aHD" firstAttribute="top" secondItem="6a6-sr-zJs" secondAttribute="top" id="7M1-0H-B24"/>
+                                    <constraint firstAttribute="bottom" secondItem="KSS-yd-aHD" secondAttribute="bottom" id="FoA-lP-cgs"/>
+                                    <constraint firstItem="KSS-yd-aHD" firstAttribute="leading" secondItem="6a6-sr-zJs" secondAttribute="leading" id="kiC-VL-iuP"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -584,6 +609,7 @@
     <resources>
         <image name="1" width="19" height="19"/>
         <image name="kuang" width="180" height="92"/>
+        <image name="头像" width="66" height="66"/>
         <image name="快速洗车" width="21" height="24"/>
         <image name="返回" width="9" height="16"/>
     </resources>

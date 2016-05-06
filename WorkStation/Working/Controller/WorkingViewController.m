@@ -9,9 +9,12 @@
 #import "WorkingViewController.h"
 #import "GuideCell.h"
 #import "WorkingHeaderView.h"
+
+#define kMaxX 210
 #define kHeaderHeight 480
 @interface WorkingViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) UIPanGestureRecognizer *pan;
 @end
 
 @implementation WorkingViewController
@@ -19,12 +22,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     _collectionView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
     WorkingHeaderView *headerView = [[WorkingHeaderView alloc]initWithFrame:CGRectMake(0, -kHeaderHeight, kScreenWidth, kHeaderHeight)];
     headerView.firstStrokeEnd = 0.76;
     headerView.secondStrokeEnd = 0.44;
     [_collectionView addSubview:headerView];
     // Do any additional setup after loading the view.
+}
+- (IBAction)leftBtnAction:(UIButton *)sender {
+    CATransform3D transform = CATransform3DIdentity;
+    if (self.tabBarController.view.frame.origin.x == 0){
+        transform = CATransform3DTranslate(transform, kMaxX, 0, 0);
+        transform = CATransform3DScale(transform, 0.8, 0.8, 1);
+        [UIView animateWithDuration:0.3 animations:^{
+            self.tabBarController.view.layer.transform = transform;
+        }];
+    }else{
+        [UIView animateWithDuration:0.3 animations:^{
+            self.tabBarController.view.layer.transform = transform;
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
