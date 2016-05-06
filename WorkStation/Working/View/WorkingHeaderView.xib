@@ -114,8 +114,8 @@
                                 <mask key="constraints">
                                     <exclude reference="ICF-qL-WIg"/>
                                     <exclude reference="Tre-vW-F2Q"/>
-                                    <exclude reference="mKC-dT-B7b"/>
                                     <exclude reference="WPb-qf-L3e"/>
+                                    <exclude reference="mKC-dT-B7b"/>
                                 </mask>
                             </variation>
                         </view>

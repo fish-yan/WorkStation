@@ -7,8 +7,13 @@
 //
 
 #import "WorkTimeChartViewController.h"
+#import "ServiceTitleCell.h"
+#import "WorkTimeCell.h"
+#import "WorkTimeHeaderView.h"
 
-@interface WorkTimeChartViewController ()
+#define kHeaderHeight 300
+@interface WorkTimeChartViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,6 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _tableView.contentInset = UIEdgeInsetsMake(kHeaderHeight, 0, 0, 0);
+    WorkTimeHeaderView *headerView = [[WorkTimeHeaderView alloc]initWithFrame:CGRectMake(0, -kHeaderHeight, kScreenWidth, kHeaderHeight)];
+    [_tableView addSubview:headerView];
     // Do any additional setup after loading the view.
 }
 
@@ -27,6 +36,45 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        ServiceTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ServiceTitleCell" forIndexPath:indexPath];
+        return cell;
+    }
+    WorkTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WorkTimeCell" forIndexPath:indexPath];
+    return cell;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *sectionView = [[UIView alloc]init];
+    sectionView.backgroundColor = [UIColor clearColor];
+    return sectionView;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        return 44;
+    }else{
+        return 65;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 12;
+}
+
 
 /*
 #pragma mark - Navigation

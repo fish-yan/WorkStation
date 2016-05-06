@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg png" translatesAutoresizingMaskIntoConstraints="NO" id="hnl-br-ctw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zg-2e-eYa">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="258"/>
                                 <subviews>
@@ -127,15 +130,19 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hnl-br-ctw" secondAttribute="bottom" id="IWQ-I3-NuM"/>
                             <constraint firstItem="xYG-u1-TqN" firstAttribute="top" secondItem="4Zg-2e-eYa" secondAttribute="bottom" id="Ibb-87-kLe"/>
+                            <constraint firstAttribute="trailing" secondItem="hnl-br-ctw" secondAttribute="trailing" id="LV2-VE-HPQ"/>
                             <constraint firstItem="xYG-u1-TqN" firstAttribute="leading" secondItem="Wv1-bw-WRH" secondAttribute="leading" id="ba1-cZ-Dcy"/>
                             <constraint firstItem="GD1-Zk-lmp" firstAttribute="top" secondItem="dvk-4e-3FS" secondAttribute="bottom" constant="41" id="cPj-7S-G0v"/>
                             <constraint firstItem="4Zg-2e-eYa" firstAttribute="leading" secondItem="Wv1-bw-WRH" secondAttribute="leading" id="jcz-Xe-xm9"/>
                             <constraint firstItem="dvk-4e-3FS" firstAttribute="top" secondItem="xYG-u1-TqN" secondAttribute="bottom" id="pG9-nq-uMS"/>
+                            <constraint firstItem="hnl-br-ctw" firstAttribute="top" secondItem="Wv1-bw-WRH" secondAttribute="top" id="qDx-VM-4nb"/>
                             <constraint firstItem="dvk-4e-3FS" firstAttribute="leading" secondItem="Wv1-bw-WRH" secondAttribute="leading" constant="38" id="sDq-zz-gpR"/>
+                            <constraint firstItem="hnl-br-ctw" firstAttribute="leading" secondItem="Wv1-bw-WRH" secondAttribute="leading" id="xT1-Fv-JOi"/>
                             <constraint firstItem="4Zg-2e-eYa" firstAttribute="top" secondItem="Wv1-bw-WRH" secondAttribute="top" id="xTM-cd-01a"/>
                         </constraints>
                     </view>
@@ -701,6 +708,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg png" width="360" height="640"/>
         <image name="下一页" width="9" height="16"/>
         <image name="头像" width="66" height="66"/>
         <image name="工作提醒" width="21" height="18"/>

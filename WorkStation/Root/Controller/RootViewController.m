@@ -86,6 +86,9 @@
     NSArray *titleArray = @[@"工作提醒", @"公司通知", @"系统通知", @"设置"];
     cell.photoView.image = [UIImage imageNamed:imageArray[indexPath.row]];
     cell.titleLab.text = titleArray[indexPath.row];
+    UIView *selectedBackgroundView = [[UIView alloc]init];
+    selectedBackgroundView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
+    cell.selectedBackgroundView = selectedBackgroundView;
     return cell;
 }
 

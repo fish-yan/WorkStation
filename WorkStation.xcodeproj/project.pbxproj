@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930F25DB1CDC29A5003BD638 /* WorkTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25DA1CDC29A5003BD638 /* WorkTimeCell.m */; };
+		930F25DE1CDC29B9003BD638 /* CommitCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25DD1CDC29B9003BD638 /* CommitCarCell.m */; };
+		930F25E11CDC2A10003BD638 /* ServiceTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E01CDC2A10003BD638 /* ServiceTitleCell.m */; };
+		930F25E41CDC2D5B003BD638 /* WorkTimeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E31CDC2D5B003BD638 /* WorkTimeHeaderView.m */; };
+		930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */; };
+		930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */; };
+		930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */; };
 		930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C31CD9D6990088052C /* VersionsViewController.m */; };
 		930F64C71CD9E65D0088052C /* GuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C61CD9E65D0088052C /* GuideCell.m */; };
 		930F64CA1CD9EFD40088052C /* GuideHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C91CD9EFD40088052C /* GuideHeaderView.m */; };
@@ -65,6 +72,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930F25D91CDC29A5003BD638 /* WorkTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkTimeCell.h; sourceTree = "<group>"; };
+		930F25DA1CDC29A5003BD638 /* WorkTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkTimeCell.m; sourceTree = "<group>"; };
+		930F25DC1CDC29B9003BD638 /* CommitCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitCarCell.h; sourceTree = "<group>"; };
+		930F25DD1CDC29B9003BD638 /* CommitCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitCarCell.m; sourceTree = "<group>"; };
+		930F25DF1CDC2A10003BD638 /* ServiceTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceTitleCell.h; sourceTree = "<group>"; };
+		930F25E01CDC2A10003BD638 /* ServiceTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceTitleCell.m; sourceTree = "<group>"; };
+		930F25E21CDC2D5B003BD638 /* WorkTimeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkTimeHeaderView.h; sourceTree = "<group>"; };
+		930F25E31CDC2D5B003BD638 /* WorkTimeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkTimeHeaderView.m; sourceTree = "<group>"; };
+		930F25E51CDC2D6B003BD638 /* CommitCarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitCarHeaderView.h; sourceTree = "<group>"; };
+		930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitCarHeaderView.m; sourceTree = "<group>"; };
+		930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkTimeHeaderView.xib; sourceTree = "<group>"; };
+		930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitCarHeaderView.xib; sourceTree = "<group>"; };
 		930F64C21CD9D6990088052C /* VersionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionsViewController.h; sourceTree = "<group>"; };
 		930F64C31CD9D6990088052C /* VersionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionsViewController.m; sourceTree = "<group>"; };
 		930F64C51CD9E65D0088052C /* GuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideCell.h; sourceTree = "<group>"; };
@@ -403,9 +422,21 @@
 		93A51ED51CD9965200DCCE14 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				930F25DF1CDC2A10003BD638 /* ServiceTitleCell.h */,
+				930F25E01CDC2A10003BD638 /* ServiceTitleCell.m */,
+				930F25D91CDC29A5003BD638 /* WorkTimeCell.h */,
+				930F25DA1CDC29A5003BD638 /* WorkTimeCell.m */,
+				930F25DC1CDC29B9003BD638 /* CommitCarCell.h */,
+				930F25DD1CDC29B9003BD638 /* CommitCarCell.m */,
 				93BFD7D71CDB3BB60029BD6F /* WorkingHeaderView.h */,
 				93BFD7D81CDB3BB60029BD6F /* WorkingHeaderView.m */,
 				93BFD7D51CDB3BA40029BD6F /* WorkingHeaderView.xib */,
+				930F25E21CDC2D5B003BD638 /* WorkTimeHeaderView.h */,
+				930F25E31CDC2D5B003BD638 /* WorkTimeHeaderView.m */,
+				930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */,
+				930F25E51CDC2D6B003BD638 /* CommitCarHeaderView.h */,
+				930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */,
+				930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +605,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				935623521CD83B020019C8BA /* LaunchScreen.storyboard in Resources */,
+				930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */,
+				930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */,
 				9356234F1CD83B020019C8BA /* Assets.xcassets in Resources */,
 				930F64CC1CD9EFE50088052C /* GuideHeaderView.xib in Resources */,
 				93BFD7D61CDB3BA40029BD6F /* WorkingHeaderView.xib in Resources */,
@@ -621,18 +654,23 @@
 				93A51F241CD9CDEA00DCCE14 /* ChangePasswordViewController.m in Sources */,
 				93A51F131CD9A39300DCCE14 /* SettingListCell.m in Sources */,
 				93A51F101CD9A38600DCCE14 /* MessageListCell.m in Sources */,
+				930F25E41CDC2D5B003BD638 /* WorkTimeHeaderView.m in Sources */,
 				93A51F0D1CD9A2EB00DCCE14 /* MessageViewController.m in Sources */,
 				930F64CA1CD9EFD40088052C /* GuideHeaderView.m in Sources */,
 				93A51EEA1CD9972200DCCE14 /* WareHouseViewController.m in Sources */,
 				930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */,
 				93A51F071CD99B3800DCCE14 /* UserCenterCell.m in Sources */,
+				930F25DE1CDC29B9003BD638 /* CommitCarCell.m in Sources */,
 				93A51F191CD9B8BA00DCCE14 /* PrinterCell.m in Sources */,
+				930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */,
 				93A51F051CD99B3800DCCE14 /* TabBarViewController.m in Sources */,
 				93BFD7DF1CDB4C330029BD6F /* WorkTimeChartViewController.m in Sources */,
 				93A51F211CD9BD4400DCCE14 /* PrinterSectionView.m in Sources */,
 				93A51F0A1CD9A2E100DCCE14 /* SettingViewController.m in Sources */,
+				930F25E11CDC2A10003BD638 /* ServiceTitleCell.m in Sources */,
 				93A51F031CD99B3800DCCE14 /* AppDelegate.m in Sources */,
 				93BFD7D91CDB3BB60029BD6F /* WorkingHeaderView.m in Sources */,
+				930F25DB1CDC29A5003BD638 /* WorkTimeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
