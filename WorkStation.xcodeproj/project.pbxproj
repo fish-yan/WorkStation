@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930910481CDD94F600DCB95A /* chars_identify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930910251CDD94F600DCB95A /* chars_identify.cpp */; };
+		930910491CDD94F600DCB95A /* chars_recognise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930910261CDD94F600DCB95A /* chars_recognise.cpp */; };
+		9309104A1CDD94F600DCB95A /* chars_segment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930910271CDD94F600DCB95A /* chars_segment.cpp */; };
+		9309104B1CDD94F600DCB95A /* core_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930910281CDD94F600DCB95A /* core_func.cpp */; };
+		9309104C1CDD94F600DCB95A /* feature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930910291CDD94F600DCB95A /* feature.cpp */; };
+		9309104D1CDD94F600DCB95A /* plate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9309102A1CDD94F600DCB95A /* plate.cpp */; };
+		9309104E1CDD94F600DCB95A /* plate_detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9309102B1CDD94F600DCB95A /* plate_detect.cpp */; };
+		9309104F1CDD94F600DCB95A /* plate_judge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9309102C1CDD94F600DCB95A /* plate_judge.cpp */; };
+		930910501CDD94F600DCB95A /* plate_locate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9309102D1CDD94F600DCB95A /* plate_locate.cpp */; };
+		930910511CDD94F600DCB95A /* plate_recognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9309102E1CDD94F600DCB95A /* plate_recognize.cpp */; };
+		930910521CDD94F600DCB95A /* ann - bak.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9309103E1CDD94F600DCB95A /* ann - bak.xml */; };
+		930910531CDD94F600DCB95A /* ann.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9309103F1CDD94F600DCB95A /* ann.xml */; };
+		930910541CDD94F600DCB95A /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 930910401CDD94F600DCB95A /* haarcascade_frontalface_alt_tree.xml */; };
+		930910551CDD94F600DCB95A /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 930910411CDD94F600DCB95A /* haarcascade_frontalface_default.xml */; };
+		930910561CDD94F600DCB95A /* svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 930910421CDD94F600DCB95A /* svm.xml */; };
+		930910571CDD94F600DCB95A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930910431CDD94F600DCB95A /* opencv2.framework */; };
+		930910581CDD94F600DCB95A /* PlateRecognize.mm in Sources */ = {isa = PBXBuildFile; fileRef = 930910451CDD94F600DCB95A /* PlateRecognize.mm */; };
+		930910591CDD94F600DCB95A /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 930910471CDD94F600DCB95A /* UIImage+fixOrientation.m */; };
+		9309105D1CDDCF8400DCB95A /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9309105C1CDDCF8400DCB95A /* ScanViewController.m */; };
 		930F25DB1CDC29A5003BD638 /* WorkTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25DA1CDC29A5003BD638 /* WorkTimeCell.m */; };
 		930F25DE1CDC29B9003BD638 /* CommitCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25DD1CDC29B9003BD638 /* CommitCarCell.m */; };
 		930F25E11CDC2A10003BD638 /* ServiceTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E01CDC2A10003BD638 /* ServiceTitleCell.m */; };
@@ -14,7 +33,6 @@
 		930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25E61CDC2D6B003BD638 /* CommitCarHeaderView.m */; };
 		930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */; };
 		930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */; };
-		930F25EE1CDC3DAE003BD638 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F25ED1CDC3DAE003BD638 /* ScanViewController.m */; };
 		930F33DE1CDCA66E003BD638 /* Working.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F33DD1CDCA66E003BD638 /* Working.storyboard */; };
 		930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C31CD9D6990088052C /* VersionsViewController.m */; };
 		930F64C71CD9E65D0088052C /* GuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F64C61CD9E65D0088052C /* GuideCell.m */; };
@@ -73,6 +91,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930910251CDD94F600DCB95A /* chars_identify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chars_identify.cpp; sourceTree = "<group>"; };
+		930910261CDD94F600DCB95A /* chars_recognise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chars_recognise.cpp; sourceTree = "<group>"; };
+		930910271CDD94F600DCB95A /* chars_segment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chars_segment.cpp; sourceTree = "<group>"; };
+		930910281CDD94F600DCB95A /* core_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core_func.cpp; sourceTree = "<group>"; };
+		930910291CDD94F600DCB95A /* feature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = feature.cpp; sourceTree = "<group>"; };
+		9309102A1CDD94F600DCB95A /* plate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate.cpp; sourceTree = "<group>"; };
+		9309102B1CDD94F600DCB95A /* plate_detect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate_detect.cpp; sourceTree = "<group>"; };
+		9309102C1CDD94F600DCB95A /* plate_judge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate_judge.cpp; sourceTree = "<group>"; };
+		9309102D1CDD94F600DCB95A /* plate_locate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate_locate.cpp; sourceTree = "<group>"; };
+		9309102E1CDD94F600DCB95A /* plate_recognize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate_recognize.cpp; sourceTree = "<group>"; };
+		930910301CDD94F600DCB95A /* chars_identify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_identify.h; sourceTree = "<group>"; };
+		930910311CDD94F600DCB95A /* chars_recognise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_recognise.h; sourceTree = "<group>"; };
+		930910321CDD94F600DCB95A /* chars_segment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_segment.h; sourceTree = "<group>"; };
+		930910331CDD94F600DCB95A /* core_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_func.h; sourceTree = "<group>"; };
+		930910341CDD94F600DCB95A /* CParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CParser.h; sourceTree = "<group>"; };
+		930910351CDD94F600DCB95A /* feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature.h; sourceTree = "<group>"; };
+		930910361CDD94F600DCB95A /* plate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate.h; sourceTree = "<group>"; };
+		930910371CDD94F600DCB95A /* plate_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate_detect.h; sourceTree = "<group>"; };
+		930910381CDD94F600DCB95A /* plate_judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate_judge.h; sourceTree = "<group>"; };
+		930910391CDD94F600DCB95A /* plate_locate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate_locate.h; sourceTree = "<group>"; };
+		9309103A1CDD94F600DCB95A /* plate_recognize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate_recognize.h; sourceTree = "<group>"; };
+		9309103B1CDD94F600DCB95A /* prep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prep.h; sourceTree = "<group>"; };
+		9309103C1CDD94F600DCB95A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9309103E1CDD94F600DCB95A /* ann - bak.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ann - bak.xml"; sourceTree = "<group>"; };
+		9309103F1CDD94F600DCB95A /* ann.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ann.xml; sourceTree = "<group>"; };
+		930910401CDD94F600DCB95A /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		930910411CDD94F600DCB95A /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		930910421CDD94F600DCB95A /* svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svm.xml; sourceTree = "<group>"; };
+		930910431CDD94F600DCB95A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		930910441CDD94F600DCB95A /* PlateRecognize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlateRecognize.h; sourceTree = "<group>"; };
+		930910451CDD94F600DCB95A /* PlateRecognize.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlateRecognize.mm; sourceTree = "<group>"; };
+		930910461CDD94F600DCB95A /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		930910471CDD94F600DCB95A /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		9309105C1CDDCF8400DCB95A /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		930F25D91CDC29A5003BD638 /* WorkTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkTimeCell.h; sourceTree = "<group>"; };
 		930F25DA1CDC29A5003BD638 /* WorkTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkTimeCell.m; sourceTree = "<group>"; };
 		930F25DC1CDC29B9003BD638 /* CommitCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitCarCell.h; sourceTree = "<group>"; };
@@ -86,7 +138,6 @@
 		930F25E81CDC2D80003BD638 /* WorkTimeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkTimeHeaderView.xib; sourceTree = "<group>"; };
 		930F25EA1CDC2D8C003BD638 /* CommitCarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitCarHeaderView.xib; sourceTree = "<group>"; };
 		930F25EC1CDC3DAE003BD638 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
-		930F25ED1CDC3DAE003BD638 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		930F33DD1CDCA66E003BD638 /* Working.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Working.storyboard; sourceTree = "<group>"; };
 		930F64C21CD9D6990088052C /* VersionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionsViewController.h; sourceTree = "<group>"; };
 		930F64C31CD9D6990088052C /* VersionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionsViewController.m; sourceTree = "<group>"; };
@@ -163,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930910571CDD94F600DCB95A /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,17 +235,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		930F25F11CDC3F53003BD638 /* Third */ = {
+		930910221CDD94F600DCB95A /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				930910231CDD94F600DCB95A /* PlateRecognize */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		930910231CDD94F600DCB95A /* PlateRecognize */ = {
+			isa = PBXGroup;
+			children = (
+				930910241CDD94F600DCB95A /* core */,
+				9309102F1CDD94F600DCB95A /* include */,
+				9309103D1CDD94F600DCB95A /* model */,
+				930910431CDD94F600DCB95A /* opencv2.framework */,
+				930910441CDD94F600DCB95A /* PlateRecognize.h */,
+				930910451CDD94F600DCB95A /* PlateRecognize.mm */,
+				930910461CDD94F600DCB95A /* UIImage+fixOrientation.h */,
+				930910471CDD94F600DCB95A /* UIImage+fixOrientation.m */,
+			);
+			path = PlateRecognize;
+			sourceTree = "<group>";
+		};
+		930910241CDD94F600DCB95A /* core */ = {
+			isa = PBXGroup;
+			children = (
+				930910251CDD94F600DCB95A /* chars_identify.cpp */,
+				930910261CDD94F600DCB95A /* chars_recognise.cpp */,
+				930910271CDD94F600DCB95A /* chars_segment.cpp */,
+				930910281CDD94F600DCB95A /* core_func.cpp */,
+				930910291CDD94F600DCB95A /* feature.cpp */,
+				9309102A1CDD94F600DCB95A /* plate.cpp */,
+				9309102B1CDD94F600DCB95A /* plate_detect.cpp */,
+				9309102C1CDD94F600DCB95A /* plate_judge.cpp */,
+				9309102D1CDD94F600DCB95A /* plate_locate.cpp */,
+				9309102E1CDD94F600DCB95A /* plate_recognize.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		9309102F1CDD94F600DCB95A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				930910301CDD94F600DCB95A /* chars_identify.h */,
+				930910311CDD94F600DCB95A /* chars_recognise.h */,
+				930910321CDD94F600DCB95A /* chars_segment.h */,
+				930910331CDD94F600DCB95A /* core_func.h */,
+				930910341CDD94F600DCB95A /* CParser.h */,
+				930910351CDD94F600DCB95A /* feature.h */,
+				930910361CDD94F600DCB95A /* plate.h */,
+				930910371CDD94F600DCB95A /* plate_detect.h */,
+				930910381CDD94F600DCB95A /* plate_judge.h */,
+				930910391CDD94F600DCB95A /* plate_locate.h */,
+				9309103A1CDD94F600DCB95A /* plate_recognize.h */,
+				9309103B1CDD94F600DCB95A /* prep.h */,
+				9309103C1CDD94F600DCB95A /* util.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9309103D1CDD94F600DCB95A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9309103E1CDD94F600DCB95A /* ann - bak.xml */,
+				9309103F1CDD94F600DCB95A /* ann.xml */,
+				930910401CDD94F600DCB95A /* haarcascade_frontalface_alt_tree.xml */,
+				930910411CDD94F600DCB95A /* haarcascade_frontalface_default.xml */,
+				930910421CDD94F600DCB95A /* svm.xml */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		935623361CD83B020019C8BA = {
 			isa = PBXGroup;
 			children = (
-				930F25F11CDC3F53003BD638 /* Third */,
+				930910221CDD94F600DCB95A /* Third */,
 				935623411CD83B020019C8BA /* WorkStation */,
 				9356235B1CD83B020019C8BA /* WorkStationTests */,
 				935623661CD83B020019C8BA /* WorkStationUITests */,
@@ -271,7 +388,7 @@
 				93A51EB61CD9965200DCCE14 /* GuideViewController.h */,
 				93A51EB71CD9965200DCCE14 /* GuideViewController.m */,
 				930F25EC1CDC3DAE003BD638 /* ScanViewController.h */,
-				930F25ED1CDC3DAE003BD638 /* ScanViewController.m */,
+				9309105C1CDDCF8400DCB95A /* ScanViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -621,8 +738,12 @@
 				930F33DE1CDCA66E003BD638 /* Working.storyboard in Resources */,
 				935623521CD83B020019C8BA /* LaunchScreen.storyboard in Resources */,
 				930F25E91CDC2D80003BD638 /* WorkTimeHeaderView.xib in Resources */,
+				930910531CDD94F600DCB95A /* ann.xml in Resources */,
+				930910551CDD94F600DCB95A /* haarcascade_frontalface_default.xml in Resources */,
 				930F25EB1CDC2D8C003BD638 /* CommitCarHeaderView.xib in Resources */,
+				930910561CDD94F600DCB95A /* svm.xml in Resources */,
 				9356234F1CD83B020019C8BA /* Assets.xcassets in Resources */,
+				930910541CDD94F600DCB95A /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				930F64CC1CD9EFE50088052C /* GuideHeaderView.xib in Resources */,
 				93BFD7D61CDB3BA40029BD6F /* WorkingHeaderView.xib in Resources */,
 				93A51F061CD99B3800DCCE14 /* Root.storyboard in Resources */,
@@ -630,6 +751,7 @@
 				93A51EE41CD996F800DCCE14 /* Manager.storyboard in Resources */,
 				93A51ED71CD9965200DCCE14 /* Guide.storyboard in Resources */,
 				93A51F1E1CD9BD2100DCCE14 /* PrinterSectionView.xib in Resources */,
+				930910521CDD94F600DCB95A /* ann - bak.xml in Resources */,
 				93A51EE21CD996EE00DCCE14 /* Purchase.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +777,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9309105D1CDDCF8400DCB95A /* ScanViewController.m in Sources */,
+				930910491CDD94F600DCB95A /* chars_recognise.cpp in Sources */,
 				93A51EE71CD9971200DCCE14 /* WorkingViewController.m in Sources */,
 				935623441CD83B020019C8BA /* main.m in Sources */,
 				93A51F041CD99B3800DCCE14 /* RootViewController.m in Sources */,
@@ -662,7 +786,9 @@
 				93BFD7E51CDB4C7E0029BD6F /* CommitCarPercentViewController.m in Sources */,
 				930F64C71CD9E65D0088052C /* GuideCell.m in Sources */,
 				93A51EF01CD9973400DCCE14 /* ManagerViewController.m in Sources */,
+				9309104D1CDD94F600DCB95A /* plate.cpp in Sources */,
 				93A51F161CD9AB4400DCCE14 /* PrinterViewController.m in Sources */,
+				930910511CDD94F600DCB95A /* plate_recognize.cpp in Sources */,
 				93BFD7E81CDB4C990029BD6F /* RepairPercentViewController.m in Sources */,
 				93A51EED1CD9972D00DCCE14 /* PurcgaseViewController.m in Sources */,
 				93A51F241CD9CDEA00DCCE14 /* ChangePasswordViewController.m in Sources */,
@@ -670,11 +796,16 @@
 				93A51F101CD9A38600DCCE14 /* MessageListCell.m in Sources */,
 				930F25E41CDC2D5B003BD638 /* WorkTimeHeaderView.m in Sources */,
 				93A51F0D1CD9A2EB00DCCE14 /* MessageViewController.m in Sources */,
+				930910481CDD94F600DCB95A /* chars_identify.cpp in Sources */,
+				9309104B1CDD94F600DCB95A /* core_func.cpp in Sources */,
+				9309104A1CDD94F600DCB95A /* chars_segment.cpp in Sources */,
+				930910591CDD94F600DCB95A /* UIImage+fixOrientation.m in Sources */,
 				930F64CA1CD9EFD40088052C /* GuideHeaderView.m in Sources */,
+				9309104C1CDD94F600DCB95A /* feature.cpp in Sources */,
 				93A51EEA1CD9972200DCCE14 /* WareHouseViewController.m in Sources */,
+				9309104E1CDD94F600DCB95A /* plate_detect.cpp in Sources */,
 				930F64C41CD9D6990088052C /* VersionsViewController.m in Sources */,
 				93A51F071CD99B3800DCCE14 /* UserCenterCell.m in Sources */,
-				930F25EE1CDC3DAE003BD638 /* ScanViewController.m in Sources */,
 				930F25DE1CDC29B9003BD638 /* CommitCarCell.m in Sources */,
 				93A51F191CD9B8BA00DCCE14 /* PrinterCell.m in Sources */,
 				930F25E71CDC2D6B003BD638 /* CommitCarHeaderView.m in Sources */,
@@ -686,6 +817,9 @@
 				93A51F031CD99B3800DCCE14 /* AppDelegate.m in Sources */,
 				93BFD7D91CDB3BB60029BD6F /* WorkingHeaderView.m in Sources */,
 				930F25DB1CDC29A5003BD638 /* WorkTimeCell.m in Sources */,
+				930910501CDD94F600DCB95A /* plate_locate.cpp in Sources */,
+				9309104F1CDD94F600DCB95A /* plate_judge.cpp in Sources */,
+				930910581CDD94F600DCB95A /* PlateRecognize.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,11 +956,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Third/PlateRecognize",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkStation/Root/WorkStationHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = WorkStation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cjm.xueyuan.WorkStation;
@@ -841,11 +977,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Third/PlateRecognize",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorkStation/Root/WorkStationHeader.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = WorkStation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cjm.xueyuan.WorkStation;

@@ -101,7 +101,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="KSS-yd-aHD" firstAttribute="top" secondItem="6a6-sr-zJs" secondAttribute="top" id="7M1-0H-B24"/>
                                     <constraint firstAttribute="bottom" secondItem="KSS-yd-aHD" secondAttribute="bottom" id="FoA-lP-cgs"/>

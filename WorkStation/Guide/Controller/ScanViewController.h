@@ -11,4 +11,6 @@
 
 @interface ScanViewController : UIViewController
 
+@property (copy, nonatomic) void(^getLince)(NSString *lince);
+
 @end

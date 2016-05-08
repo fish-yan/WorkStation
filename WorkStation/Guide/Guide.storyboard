@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sek-9O-iwg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sek-9O-iwg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -34,13 +34,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kf3-wV-NfU">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf3-wV-NfU">
                                                     <rect key="frame" x="1" y="0.0" width="88" height="89"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="快速洗车" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-WU-l0m">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="快速洗车" translatesAutoresizingMaskIntoConstraints="NO" id="K6M-WU-l0m">
                                                             <rect key="frame" x="34" y="20" width="21" height="24"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="快速洗车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-Hm-JJF">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速洗车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-Hm-JJF">
                                                             <rect key="frame" x="20" y="54" width="48" height="15"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,9 +144,12 @@
                                         <rect key="frame" x="134" y="202" width="52" height="52"/>
                                         <state key="normal" image="scan_拍照-普通"/>
                                         <state key="highlighted" image="scan_拍照-点击"/>
+                                        <connections>
+                                            <action selector="captureImageBtnAction:" destination="q5M-Yf-Ytb" eventType="touchUpInside" id="Ht9-gX-LiV"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将车牌放入框内即可自动扫描" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46c-MY-wc1">
-                                        <rect key="frame" x="76" y="50" width="169" height="16"/>
+                                        <rect key="frame" x="75" y="50" width="169" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -209,7 +212,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="UBY-en-Jeg"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="scanBtn" destination="Qvg-Hm-FBx" id="vwZ-FG-lN5"/>
                         <outlet property="scanLineTopMargin" destination="SQl-f3-cn5" id="0oT-QF-zO9"/>
                         <outlet property="scanView" destination="BqJ-NB-4yD" id="Y8X-Tm-Ksr"/>
                     </connections>
